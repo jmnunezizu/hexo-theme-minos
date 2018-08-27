@@ -1,5 +1,13 @@
+<!-- Featured Image -->
+<% if (page.featured_image) { %>
+  <div class="post-header-cover-container">
+    <div class="post-header-cover" style="background-image: url(<%- page.featured_image %>)"></div>
+    <!-- <%- image_tag(page.featured_image, {class: 'post-header-cover'}) %> -->
+  </div>
+<% } %>
+
 <section class="section">
-    <div class="container">
+  <div class="container">
     <%- partial('common/article', { post: page, index: false }) %>
-    </div>
+  </div>
 </section>

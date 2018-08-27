@@ -1,0 +1,72 @@
+// .featured-image {
+//   height: 400px;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   margin-top: 15px;
+// }
+
+.article {
+  .article-entry {
+    .featured-image {
+      img {
+       // margin: 20px 0;
+      }
+    }
+
+    p {
+      margin: 1.4em 0;
+    }
+
+    .caption {
+      font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva,Arial,sans-serif!important;
+      color: #939393;
+      display: block;
+      font-size: 1rem;
+      margin-top: .5em;
+      position: relative;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+
+    // Drop Caps: https://css-tricks.com/snippets/css/drop-caps/
+    // p::first-letter {
+    //   font-size: 66px;
+    //   font-weight: 500!important;
+    //   padding-right: 7px;
+    //   padding-top: 3px;
+    //   line-height: .83;
+    //   float: left;
+    // }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .article {
+    .article-entry {
+      // p::first-letter {
+      //   font-size: 50px;
+      //   font-weight: 500!important;
+      //   padding-right: 7px;
+      //   padding-top: 3px;
+      //   line-height: .83;
+      //   float: left;
+      // }
+    }
+  }
+
+}
+
+.post-header-cover {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // margin-top: 10px;
+  
+  // @media mq-mobile
+  //   height: 150px
+}

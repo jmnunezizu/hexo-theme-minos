@@ -62,8 +62,8 @@
         // wrap images with link and add caption if possible
         if ($(this).parent('a').length === 0) {
             $(this).wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
-            if (this.alt) {
-                $(this).after('<div class="caption">' + this.alt + '</div>');
+            if (this.alt || this.title) {
+                $(this).after('<div class="caption">' + (this.alt || this.title) + '</div>');
             }
         }
     });

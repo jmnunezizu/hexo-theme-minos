@@ -1,5 +1,5 @@
 <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+    <h1 class="article-title is-size-2 is-size-4-mobile" itemprop="name">
         <% if (index) { %>
             <a href="<%- url_for(post.link ? post.link : post.path) %>" itemprop="url"><%= post.title %></a>
         <% } else { %>
@@ -30,7 +30,9 @@
     <% if (post.excerpt && index){ %>
         <!-- Featured Image -->
         <% if (post.featured_image){ %>
-          <%- image_tag(post.featured_image, {class: 'featured-image'}) %>
+          <div class="featured-image">
+            <%- image_tag(post.featured_image, { class: 'featured-image' }) %>
+          </div>
         <% } %>
 
         <%- post.excerpt %>
