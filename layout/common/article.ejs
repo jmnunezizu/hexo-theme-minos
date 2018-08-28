@@ -31,7 +31,7 @@
         <!-- Featured Image -->
         <% if (post.featured_image){ %>
           <div class="featured-image">
-            <%- image_tag(post.featured_image, { class: 'featured-image' }) %>
+            <%- image_tag(post.thumbnail, { class: 'featured-image not-gallery-item' }) %>
           </div>
         <% } %>
 
